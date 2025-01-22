@@ -1,6 +1,9 @@
 #all{
     color: red;
 }
+body{ 
+    /* overflow-x: hidden; */
+}
 *{
     margin: 0;
     font-family: Inter;
@@ -85,6 +88,39 @@ footer ol{
 #section2-button{
     font-size: 15px !important;
 }
+#section3{
+    margin-top: 1250px;
+    flex-direction: column;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+#section3-leftdiv{
+    margin-left: 0px !important;
+    padding: 0px 0px !important;
+    width: 90vw !important;
+}
+#section3-bubble{
+width: 65vw !important;
+}
+#section3-leftdiv > img{
+    width: 90vw !important;
+}
+#section3-rightdiv{
+    margin-top: 400px;
+    width: 90vw !important;
+}
+#section3-rightdiv p{
+   margin-right: 0px !important;
+}
+#section3-rightimg{
+width: 90vw;
+}
+#section3-focus{
+   padding-right: 0px !important;
+}
+#section3-focus > button{
+    margin-top: 40px !important;
+ }
 }
 /*section 1 responsiveness*/
 @media screen and (max-width:863px) {
@@ -105,21 +141,65 @@ footer ol{
        padding: 0px 0px !important;
     }
    }
-  /*open div extra 2 section2*/ 
-  
-  /*close div*/
    @media screen and (max-width:500px) {
     #section2-grid{
      grid-template-columns: 1fr !important;
     }
-   }
-   @media screen and (min-width:510px) and (max-width:700px) {
+    #section4{
+        background-color: red !important;
+        margin: 0px 20px;
+    }
+    #section4-images{
+        /* background-color: blue !important; */
+        margin-top: 10px !important;
+        gap: 0px !important;
+        
+    }
+    #section4-images img{
+     width: 95px;
+    }
+    #section5{
+        background-color: aqua !important;
+        margin-top: 450px !important;
+        justify-content: center !important;
+    }
+    #section6{
+        background-color: green !important;
+        flex-direction: column;
+    }
+    #section6-left{
+        background-color: yellow !important;
+        padding: 0px !important;
+        width: 90% !important;
+        margin: 0px 20px;
+    }
+    #section6-right{
+        background-color: yellowgreen !important;
+        padding: 0px !important;
+        width: 90% !important;
+        margin: 0px 20px;
+    }
+    #section6-right #card{
+        width: 70% !important;
+    }
+    #section6-right .card2{
+    margin-left: 10px !important;
+    }
+    #section7-github{
+        background-color: red;
+       grid-template-columns: 1fr !important;
+    }
+}
+   @media screen and (min-width:501px) and (max-width:700px) {
     #section2-grid{
      grid-template-columns: 1fr 1fr !important;
     }
     #section2-grid > :last-child{
       grid-column: span 2;
     }
+    #section3{
+        margin-top: 600px;
+     }
    }
    @media screen and (min-width:701px) and (max-width:1200px) {
     #section2-grid{
@@ -137,12 +217,55 @@ footer ol{
       #section2-grid > :last-child {
         margin-right: -150px;
       }
+      #section3{
+        margin-top: 300px;
+        flex-direction: column;
+     }
+     #section3-rightdiv{
+        margin-top: 330px;
+        width: 90vw !important;
+    }
+    #section3-bubble{
+        margin-top: -90px;
+        width: 34vw !important;
+        }
+        .rect{
+            width: 100% !important;
+        }
+}
+@media screen and (min-width:863px) and (max-width:1000px) {
+    .div4{
+        margin-top: 50px !important;
+    }
+    .rect{
+        display: none;
+     }
+}
+@media screen and (min-width:1001px) and (max-width:1370px) {
+    .div4{
+        margin-top: 0px !important;
+    }
+    .rect{
+       display: none;
+    }
+}
+@media screen and (min-width:1351px) and (max-width:1547px) {
+    .div4{
+        margin-top: 0px !important;
+    }
+    .rect{
+       width: 100% !important;
+       margin-left: 110px;
+    }
 }
 @media screen and (min-width:1201px) and (max-width:1500px) {
     #section2-grid{
-     grid-template-columns: 1fr 1fr 1fr 1fr !important;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
       }
-    #section2-grid > :last-child{
-      grid-column: span 4;
-    }
+}
+@media screen and (max-width:500x) {
+    #section3{
+        margin-top: 1250px;
+     
+    }    
 }
