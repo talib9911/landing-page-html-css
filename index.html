@@ -25,12 +25,12 @@
         <div
             style="position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; gap: 10px; margin-top: -71px;">
             <button
-                style="border-radius: 6px; border: none; font-weight: 500; font-size: 12px; padding: 4px 9px; color: #444444;">Special</button>
+                style="border-radius: 6px; border: none; font-weight: 500; font-size: clamp(10px, 2vw, 12px);  padding: 4px 9px; color: #444444;">Special</button>
             <img src="images/Smiling Face With Heart Eyes.png">
-            <h4 style="font-weight: 500; font-size: 17px; color: rgba(255, 255, 255, 0.7);" id="back-special">Get <span
-                    style="font-weight: 700; font-size: 17px; color: rgba(255, 255, 255, 1);
+            <h4 style="font-weight: 500; font-size: clamp(12px, 2vw, 17px); color: rgba(255, 255, 255, 0.7);"
+                id="back-special">Get <span style="font-weight: 700; font-size: clamp(12px, 2vw, 17px);  color: rgba(255, 255, 255, 1);
 ;">20% Discount</span> get for new account</h4>
-            <button style="border: none; font-weight: 500; font-size: 17px; background-color: transparent; color: white; text-decoration: underline; color: rgba(255, 255, 255, 1);
+            <button style="border: none; font-weight: 500; font-size: clamp(12px, 2vw, 17px); background-color: transparent; color: white; text-decoration: underline; color: rgba(255, 255, 255, 1);
 ;">Register now </button>
         </div>
     </div>
@@ -57,7 +57,7 @@
                 <li>Blog</li>
                 <li>Contact</li>
             </ol>
-            <div style="position: absolute; background-color: rgba(253, 0, 0, 0.2); border-radius: 3px; font-weight: 400; font-size: 8px; color:rgba(188, 0, 0, 1); margin-top: -30px; margin-left: -160px; padding: 2px 4px;
+            <div id="nav-hot" style="position: absolute; background-color: rgba(253, 0, 0, 0.2); border-radius: 3px; font-weight: 400; font-size: 8px; color:rgba(188, 0, 0, 1); margin-top: -30px; margin-left: -160px; padding: 2px 4px;
 
 ">Hot</div>
             <div style="display: flex; gap: 20px;">
@@ -70,7 +70,8 @@
     </div>
     <div style="display: flex; padding-top: 60px; flex-wrap: wrap; background-color: #ffffff;  position: relative; z-index: 1;"
         id="section1"> <!--section 1-->
-        <div style="display: flex; flex-direction: column; padding: 90px 180px; flex: 1 1 100px;" id="lefts1">
+        <div style="display: flex; flex-direction: column; padding: 90px 180px; flex: 1 1 100px;"
+            id="section1-left-div">
             <!--left coloumn-->
             <button
                 style="background-color:rgba(105, 83, 211, 0.12);
@@ -82,13 +83,16 @@
             <h4 style="font-size: 20px; font-weight: 500; margin-top: 18px; color: #333333;">No Coding required to make
                 customization. the live
                 customizer has everything you need.</h4>
-            <div style="display: flex; gap:120px; align-items: center; margin-top: 30px;" id="section1-button-div">
-                <button
-                    style="display: flex;  align-items: center;  background-color: #6953d3; padding: 10px 20px; color: white; border: none; border-radius: 24px; margin-top: 30px;"><img
-                        src="images/Apple Logo.png">| Download App</button>
-                <img src="images/Ellipse 7.png"
-                    style="height: 57px; width: 56px; padding-left: 110px; margin-right: -110px; margin-top: 15px;">
-                <p style="font-weight: 500; font-size: 17px; color: #333333; margin-top: 10px;">View <br>Promotion</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 30px; max-width: 550px; "
+                id="section1-button-div">
+                <span><button
+                        style="display: flex;  align-items: center;  background-color: #6953d3; padding: 10px 20px; color: white; border: none; border-radius: 24px; margin-top: 30px;"><img
+                            src="images/Apple Logo.png">| Download App</button></span>
+                <span style="display: flex; align-items: center;"><img src="images/Ellipse 7.png"
+                        style="height: 57px; width: 56px; padding-left: 110px; margin-top: 15px;" id="section1-img">
+                    <p style="font-weight: 500; font-size: 17px; color: #333333; margin-top: 10px; margin-left: 20px;">
+                        View <br>Promotion</p>
+                </span>
             </div>
             <div style="display: flex; margin-top: 45px; gap: 180px;">
                 <div style="display: flex; align-items: center;">
@@ -108,11 +112,11 @@
             <img style="max-width: 100%; margin-top: 90px;" src="images/header_4 1 (1).png" id="img1">
         </div>
     </div>
-    <div style="position: relative; margin-top: -140px; " class="div4"> <!--section2-->
+    <div style="position: relative; margin-top: -140px; " id="section2"> <!--section2-->
         <img src="images/Rectangle 8.png" class="rect" style="position: absolute; z-index: 1; height: 1000px;">
         <img src="images/Rectangle 7.png" class="rect2" style="position: absolute; z-index: 1; height: 1050px;">
         <div style="z-index: 2; position: relative; width: 100%; padding-top: 180px;">
-            <h2 style="text-align: center; font-size: 40px; margin-top: 0;">
+            <h2 style="text-align: center; font-size: clamp(25px, 2vw, 40px); margin-top: 0;" id="section2-25">
                 <span style="color: #6953d3;">25K+ Installation</span> and featured on
             </h2>
             <div
@@ -128,16 +132,11 @@
                 <button style="background-color: #ffffff; border: none; display: flex; color: #6953D3;
 ; padding: 19px 11px; margin-top: -40px; font-weight: 500; font-size: 17px;" id="section2-button">Notero-Easy
                     Note App</button>
-                <h1 style="font-size: 50px; margin-top: 15px;">Awesome <span
+                <h1 style="font-size:clamp(30px, 2vw, 50px); margin-top: 15px;" id="section2-awesome">Awesome <span
                         style="background: linear-gradient(to right, #6a54d4, #f98085 ); background-clip: text; -webkit-text-fill-color: transparent; ">
                         Features</span> </h1>
             </div>
             <div style="display: flex; justify-content: center; margin-top: 22px;">
-                <div style="position: absolute; background-color: #B4F59D;
-                ; border-radius: 50%
-               ; font-weight: 500; font-size: 14px; color:#1A6301;
-               ; margin-top: 57px; margin-left: 110px; padding: 14px 7px; z-index: 1;
-                ">New</div>
                 <img src="images/Ellipse 13 (Stroke).png">
                 <img src="images/Ellipse 14 (Stroke).png" style="position: absolute; margin-top: 55px;">
                 <div style="display: grid;  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; position: absolute; gap: 140px; margin-top: 57px;"
@@ -158,7 +157,7 @@
                     </div>
                     <div
                         style="display: flex; flex-direction: column; justify-content: center; align-items: center; font-weight: bold;">
-                        <img src="images/Ellipse 17.png">
+                        <img src="images/new image.svg">
                         <p style="margin-top: 20px; text-align: center;">Collaboration and
                             <br>
                             Share
@@ -188,33 +187,40 @@
     <div style=" width: 100%; display: flex; padding-top: 120px;" id="section3">
         <div style="display: flex; flex-direction: column; width: 50%; margin-left: 194px; align-items: flex-start; justify-content: flex-start; position: relative;"
             id="section3-leftdiv">
-            <!-- left side -->
-            <img src="images/ipad 1.png" style="position: relative; z-index: 1;">
-            <img src="images/about_s4_lines 1.svg" style="position: absolute; z-index: 0; margin-top: -160px; margin-left: -120px;">
-            <img src="images/about_s4_bubble 1.svg" style="position: absolute; z-index: 0; margin-top: -50px; margin-left: -62px;">
+            <!-- left side  -->
+            <img src="images/ipad 1.png" style="position: relative; z-index: 1;" id="section3-ipad-img">
+            <img src="images/about_s4_lines 1.svg"
+                style="position: absolute; z-index: 0; margin-top: -160px; margin-left: -120px;" id="section3-ipad-img">
+            <img src="images/about_s4_bubble 1.svg"
+                style="position: absolute; z-index: 0; margin-top: -50px; margin-left: -62px;" id="section3-ipad-img">
             <button
-                style="background-color: #edeafa; border: none; color: #6953d3; padding: 11px 11px; font-weight: 500; font-size: 19px; margin-top: 200px;">Better
+                style="background-color: #edeafa; border: none; color: #6953d3; padding: 11px 11px; font-weight: 500; font-size: 19px; margin-top: 200px;"
+                id="section3-better-btn">Better
                 Note Management
             </button>
             <h1 style="font-size: 40px; color: #333333;">Your Notes <span
                     style="background: linear-gradient(to right, #6a54d4, #f98085 ); background-clip: text; -webkit-text-fill-color: transparent; ">
                     Security</span> </h1>
-            <p style="font-weight: 500; font-size: 17px; color: #444444; margin-top: 20px;">Automatically syncs across all your devices. You can
+            <p style="font-weight: 500; font-size: 17px; color: #444444; margin-top: 20px;">Automatically syncs across
+                all your devices. You can
                 also <br> access and write notes without internet connection.</p>
-            <div style="background-color: #edeafa; width: 420px; margin-top: 20px; padding: 10px 10px 22px;">
+            <div style="background-color: #edeafa; width: 420px; margin-top: 20px; padding: 10px 10px 22px;"
+                id="section3-create">
                 <span
-                    style="display: flex; border: none; color: #4B2FD2; font-weight: 600; font-size: 17px; gap: 22px; ">Create
+                    style="display: flex; border: none; color: #4B2FD2; font-weight: 600; font-size: 17px; gap: 22px; "
+                    id="section3-create-span">Create
                     And Save Your Notes With Multi-Media <img src="images/arrowdown3.png"></span>
-                <p style="margin-top: 14px; font-weight: 500; font-size: 17px; color: #444444;">Images, videos, PDFs and audio files are supported. Create math
+                <p style="margin-top: 14px; font-weight: 500; font-size: 17px; color: #444444;" id="section3-create-p">
+                    Images, videos, PDFs and audio files are supported. Create math
                     expressions and diagrams directly from the app. Take photos with the mobile app and save
                     them to a note.</p>
             </div>
-            <div style="display: flex; gap: 234px; margin-top: 30px;">
-                <p style=" margin-left: 15px; font-weight: bold;">Web Clipper Extension </p>
+            <div style="display: flex; gap: 234px; margin-top: 30px; " id="section3-web-div1">
+                <p style=" margin-left: 15px; font-weight: bold;" id="section3-web">Web Clipper Extension </p>
                 <img src="images/arrowdown4.png">
             </div>
-            <div style="display: flex; gap: 193px; margin-top: 30px;">
-                <p style=" margin-left: 15px; font-weight: bold;">Protect Your Note With Lock </p>
+            <div style="display: flex; gap: 193px; margin-top: 30px;" id="section3-web-div2">
+                <p style=" margin-left: 15px; font-weight: bold;" id="section3-web">Protect Your Note With Lock </p>
                 <img src="images/arrowdown4.png">
             </div>
             <button
@@ -222,26 +228,31 @@
                 <img src="images/Chrome.png">
                 <div style="width: 1px; height: 36px;  ; background-color: rgba(68, 68, 68, 0.5);"></div>
                 <div style="text-align: left;">
-                    <p style="font-weight: 500; font-size: 10px; color: rgba(68, 68, 68, 0.7); margin-top: -3px; margin-bottom: 6px;">Available In The</p>
+                    <p
+                        style="font-weight: 500; font-size: 10px; color: rgba(68, 68, 68, 0.7); margin-top: -3px; margin-bottom: 6px;">
+                        Available In The</p>
                     <p style="font-weight: 600; font-size: 11px; color: rgba(68, 68, 68, 1);
 ;">Chrome Web Store</p>
                 </div>
             </button>
-            <div style="position: relative; margin-top: 110px;">
-                <img src="images/bubble 3.png" style="position: absolute;" id="section3-bubble">
+            <div style="position: relative; margin-top: 110px;" id="section3-cal-img">
+                <img src="images/bubble 3.png" style="position: absolute;" id="section3-call-img1">
                 <img src="images/about_s4_img3 1.png" style="position: absolute; left: 74px; top: 40px;"
-                    id="section3-bubble">
+                    id="section3-call-img2">
             </div>
         </div>
-        <div style="width: 50%;" id="section3-rightdiv"> <!--right side -->
+        <div style="width: 50%;" id="section3-rightdiv"> <!--right side  -->
             <button
-                style="font-weight: 500; font-size: 17px; background-color: #edeafa; border: none; color: hsl(250, 59%, 58%); padding: 14px 17px; margin-bottom: 15px;">Notero-Easy
+                style="font-weight: 500; font-size: 17px; background-color: #edeafa; border: none; color: hsl(250, 59%, 58%); padding: 14px 17px; margin-bottom: 15px;"
+                id="section3-right-btn">Notero-Easy
                 Note App</button>
             <h1 style="font-size: 40px; font-weight: 700; margin-bottom: 0;"> The Noter For <br><span
                     style="background: linear-gradient(to right, #6a54d4, #f98085 ); background-clip: text; -webkit-text-fill-color: transparent; ">
                     Creative
                 </span></h1>
-            <p style="margin-right: 310px; margin-top: 28px; font-weight: 500; font-size: 17px; color: #444444; line-height: 30px;">Stay focused and productive with a clean
+            <p
+                style="margin-right: 310px; margin-top: 28px; font-weight: 500; font-size: 17px; color: #444444; line-height: 30px;">
+                Stay focused and productive with a clean
                 clutter-free note space. the flexible ways to organize
                 your notes: hashtags , nested notebooks , pining notes to the top of the note list, ect.</p>
             <div style="display: flex; flex-direction: column; margin-top: 25px; gap: 26px;">
@@ -270,13 +281,17 @@
                         Themes</button>
                 </div>
                 <div style="padding-right: 290px; margin-top: 20px;" id="section3-focus">
-                    <h1 style="font-size: 40px; font-weight: 700; color: #333333; margin-bottom: 0;">Focus More With <span
+                    <h1 style="font-size: 40px; font-weight: 700; color: #333333; margin-bottom: 0;">Focus More With
+                        <span
                             style="background: linear-gradient(to right, #6a54d4, #f98085 ); background-clip: text; -webkit-text-fill-color: transparent; ">
                             <br>Dark Theme</span></h1>
-                    <h4 style="font-size: 17px; font-weight: 500; margin-top: 50px; color: rgba(68, 68, 68, 0.6); line-height: 30px;">Apply
+                    <h4
+                        style="font-size: 17px; font-weight: 500; margin-top: 50px; color: rgba(68, 68, 68, 0.6); line-height: 30px;">
+                        Apply
                         Notero’s elegant themes to your taste.
                         Dark themes work excellently for those who prefer distraction-free mode.</h4>
-                    <ul style="font-weight: 500; font-size: 20px; padding-left: 0; margin-left: 22px; margin-top: 50px; line-height: 35px;" class="list">
+                    <ul style="font-weight: 500; font-size: 20px; padding-left: 0; margin-left: 22px; margin-top: 50px; line-height: 35px;"
+                        class="list">
                         <li>Filtering notes using matched keywords</li>
                         <li>8 Beautiful themes for you select</li>
                         <li>Save energy for your device</li>
@@ -288,46 +303,40 @@
                 </div>
             </div>
         </div>
-    </div> <!--section4-->
+    </div> <!--section4 -->
     <div style="display: flex; flex-direction: column; margin-top: 150px; align-items: center; justify-content: center;"
         id="section4">
         <button
             style="background-color: #e9e5f8; border: none; border-radius: 5px; color: #6953d3; padding: 14px 0px; width: 210px; font-weight: 500; font-size: 17px;">One-Time
             Payment</button>
-        <h1 style="font-size: 40px; font-weight: 700; margin-bottom: 0; color: #333333; margin-top: 30px;">
+        <h1
+            style="font-size:clamp(26px, 2vw, 40px); font-weight: 700; margin-bottom: 0; color: #333333; margin-top: 30px;">
             Integration With <span
                 style="background: linear-gradient(to right, #6a54d4, #f98085 ); background-clip: text; -webkit-text-fill-color: transparent; ">
                 Popular Apps</span> </h1>
         <p style="font-weight: 400; font-size: 15px; margin-top: 20px; color: rgba(0, 0, 0, 0.6);
 ;">Notero integrate with popular apps.
             Help you easy to connect and collaboration</p>
-        <div style="margin-top:-140px; position: relative;">
-            <img src="images/header_4_bubble 1.png" style="width: 99vw;">
-            <div style="display: flex; align-items: center; justify-content: center; position: absolute; top: 0; gap: 220px; width: 100%;"
-                id="section4-images">
-                <div><img src="images/intg1.png" style="margin-top: 240px;"></div>
-                <div><img src="images/intg5.png" style="margin-top: 370px;"></div>
-                <div><img src="images/intg4.png" style="margin-top: 180px;"></div>
-                <div><img src="images/intg3.png" style="margin-top: 380px;"></div>
-                <div><img src="images/intg2.png"></div>
-            </div>
-        </div>
-    </div> <!--section 5-->
+        <img src="images/popular apps.svg" style="width: 96vw;">
+    </div>
+    <!--section 5-->
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 170px; background-color: #f9f4f4; margin-top: 70px; padding-top: 70px; padding-left: 25px; padding-right: 25px; padding-bottom: 30px;"
         id="section5">
         <img src="images/3.png">
         <img src="images/4(1).png" style="margin-top: 40px;">
-        <div style="position: relative; margin-top: -30px;">
+        <div style="position: relative; margin-top: -30px; " id="section5-hand">
             <img style="position: absolute; z-index: 1;" src="images/hand 1.svg">
             <img style="margin-left: 46px; margin-top: 9px;" src="images/5(1).svg">
         </div>
-        <div>
+        <div id="section5-charmy">
             <img src="images/1(1).png">
         </div>
         <img src="images/2(1).png" style="margin-top: -35px;">
-    </div> <!--section 6-->
-    <div style="display: flex; width: 100%; justify-content: center; padding-top: 70px;" id="section6"> <!--section 6-->
-        <div style="width: 40%; padding-right: 280px ; box-sizing: border-box;" id="section6-left"> <!--left side-->
+    </div>
+    <!--section 6-->
+    <div style="display: flex; width: 100%; justify-content: center; padding-top: 70px;" id="section6">
+        <!-- left side  -->
+        <div style="width: 40%; padding-right: 280px ; box-sizing: border-box;" id="section6-left-div">
             <button
                 style="background-color: #edeafa; border: none; color: hsl(250, 59%, 58%); padding: 14px 30px; font-weight: 500px; margin-top: 30px;">Testimonials</button>
             <h1 style="font-size: 40px; font-weight: 700px; color: #333333; margin-bottom: 0; margin-top: 25px;">
@@ -337,7 +346,7 @@
             <h4 style="font-size: 17px; font-weight: 500; margin-top: 25px; color: rgba(68, 68, 68, 0.6);
 ; line-height: 30px;">Notero loved from
                 thoudsands customer worldwide and get trusted from big companies.</h4>
-            <div style="margin-top: 60px; display: flex; align-items: center; justify-content: center; gap: 40px;">
+            <div style="margin-top: 60px; display: flex; align-items: center; justify-content: center; gap: 40px;" id="section6-download">
                 <div>
                     <img src="images/testi_s4_ic1 (1).png">
                     <h2 style="color: #5038c6; font-weight: 700px; font-size: 35px; margin-top: 25px;">2,5M+
@@ -361,20 +370,19 @@
                 <button
                     style="background-color: #6953d3; padding: 16px 25px; color: white; border: none; border-radius: 24px;">See
                     Reviews on app store</button>
-                <img src="images/Ellipse 7.png"
-                    style="height: 51px; margin-right: -20px; margin-left: 39px;">
+                <img src="images/Ellipse 7.png" style="height: 51px; margin-right: -20px; margin-left: 39px;">
                 <p>View <br>Promotion</p>
             </div>
         </div> <!--right side-->
-        <div style=" margin-right: 0px; width: 40%; margin-top: -10px; position: relative; " id="section6-right">
+        <div style=" margin-right: 0px; width: 40%; margin-top: -10px; position: relative; " id="section6-right-div">
             <div>
                 <img src="images/contact_globe 1.png">
             </div> <!--card1-->
             <div style="display: flex; align-items: center; width: 450px; gap: 25px; background-color: #ffffff; position: absolute; border-radius: 20px; top: 0; margin-top: 57px; margin-left: 88px; box-shadow: 4px 4px 12px 0px #00000040; padding:24px 20px ;"
-                id="card">
-                <img src="images/user4.png">
+            id="section6-card">
+                <img src="images/user4.png" id="elipse">
                 <div style="margin-top: -20px;">
-                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;">
+                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;" id="star">
                     <p style="font-weight: 600px; font-size: 11px; color: #444444; margin-bottom: 13px; ">“You
                         can even send emails to Evernote and gatherall of the things you need in a single
                         place.”</p>
@@ -384,10 +392,10 @@
                 </div>
             </div> <!--card2-->
             <div style="display: flex; align-items: center; width: 450px; gap: 25px; background-color: #ffffff; position: absolute; top: 0; border-radius: 20px; margin-top: 230px; margin-left: 150px; box-shadow: 4px 4px 12px 0px #00000040; padding:24px 20px ; "
-                id="card" class="card2">
+                id="section6-card" class="card2">
                 <img src="images/user5.png">
                 <div style="margin-top: -20px;">
-                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;">
+                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;" id="star">
                     <p style="font-weight: 600px; font-size: 11px; color: #444444; margin-bottom: 13px; ">“You
                         can even send emails to Evernote and gatherall of the things you need in a single
                         place.”</p>
@@ -397,10 +405,10 @@
                 </div>
             </div> <!--card3-->
             <div style="display: flex; align-items: center; width: 450px; gap: 25px; background-color: #ffffff; position: absolute; top: 0; border-radius: 20px; margin-top: 390px; margin-left: 60px; box-shadow: 4px 4px 12px 0px #00000040; padding:24px 20px ;"
-                id="card">
+            id="section6-card" class="card3">
                 <img src="images/user6.png">
                 <div style="margin-top: -20px;">
-                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;">
+                    <img src="images/star.png" style="width: 150px; margin-bottom: 10px;" id="star">
                     <p style="font-weight: 600px; font-size: 11px; color: #444444; margin-bottom: 13px; ">“You
                         can even send emails to Evernote and gatherall of the things you need in a single
                         place.”</p>
@@ -411,7 +419,7 @@
             </div>
         </div>
     </div> <!--section7-->
-    <div style="display: flex; flex-direction: column; align-items: center; margin-top: 60px;">
+    <!-- <div style="display: flex; flex-direction: column; align-items: center; margin-top: 60px;">
         <button
             style="background-color: #edeafa; border: none; color: #6953D3; padding: 15px 20px; font-weight: 500px; font-size: 17px; border-radius: 5px;">Notero
             Community</button>
@@ -447,27 +455,9 @@
                     <p style="font-weight: 500; font-size: 15px; color: #444444;">Channel For Community </p>
                 </div>
             </div>
-            <!-- <div style="display: flex; align-items: center;">
-                <img src="images/Twitter.png">
-                <div>
-                    <h2
-                        style="color: #444444; margin-top: -20px; margin-bottom: 8px; font-weight: 700px; font-size: 32px;">
-                        Tweeter</h2>
-                    <p>Latest News & Update</p>
-                </div>
-            </div> -->
-            <!-- <div style="display: flex; align-items: center;">
-                <img src="images/Telegram.png">
-                <div>
-                    <h2
-                        style="color: #444444; margin-top: -20px; margin-bottom: 8px; font-weight: 700px; font-size: 32px;">
-                        Telegram</h2>
-                    <p>Channel For Community </p>
-                </div>
-            </div> -->
         </div>
-    </div>
-    <div style="margin-top: 130px; position: relative; "> <!-- section 8-->
+    </div> -->
+    <!-- <div style="margin-top: 130px; position: relative; "> section 8
         <img src="images/Rectangle 28.png" style="width: 100%; position: absolute; height: 720px">
         <img src="images/Rectangle 27.png" style="position: absolute; z-index: 1; width: 100%; height: 720px;">
         <div
@@ -503,12 +493,6 @@
                 </div>
             </footer>
             <hr style="background-color: #959292; width: 81%; margin-top: 30px;">
-            <!-- <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
-                <p style="font-weight: 100; font-size: 1px; margin-top: 20px; color:rgba(0, 0, 0, 0.6);
-;">
-                <div style=" margin-right: 8px;">&copy;</div>2023 copyrights by <span
-                    style="font-weight: 700;">ITech.</span> All Rights Reserved.</p>
-            </div> -->
             <div style="display: flex; align-items: center; justify-content: center; margin-top: 25px;">
                 <div style="display: flex; align-items: center; font-weight: 700; font-size: 15px; color: rgba(0, 0, 0, 0.6);">
                     <span style="margin-right: 8px;">&copy;</span>
@@ -517,7 +501,7 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
