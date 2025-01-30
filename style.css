@@ -1,8 +1,5 @@
-#all {
-  color: red;
-}
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -70,11 +67,9 @@ footer ol {
       }
       #section1{
         align-items: center;
-        /* background-color: pink !important; */
       }
     #section1-left-div {
-     width: 80vw !important;
-     /* background-color: red; */
+     width: 90vw !important;
      padding: 40px 40px !important;
     }
     #nav-hot-icon {
@@ -83,19 +78,33 @@ footer ol {
       #section1-button-div {
       margin: 10px 0px !important;
       gap: 0px !important;
-      /* background-color: green; */
+      padding: 0px 0px !important;
     } 
     #section1-button-div span:first-child {
       flex-shrink: 0; 
-      flex-grow: 0; 
-      width: auto; 
-      max-width: 200px; 
+      flex-grow: 0;  
+      max-width: 300px;
   }  
+  }
+  @media screen and (min-width: 1101px) and (max-width:1320px) {
+    #section1-button-div span:first-child{
+      flex-shrink: 0; 
+      flex-grow: 0;  
+      max-width: 300px;
+      margin-right: 59px;
+   }
+  }
+  @media screen and (min-width: 638px) and (max-width:990px) {
+    #section1-button-div span:first-child{
+      flex-shrink: 0; 
+      flex-grow: 0;  
+      max-width: 300px;
+      margin-right: 59px;
+   }
   }
 /*section2*/
 @media screen and (max-width: 550px) {
   #section2{
-    /* background-color: #444444; */
     margin-top: -103px !important;
   }
   #section2 .rect2{
@@ -106,7 +115,6 @@ footer ol {
   
   }
   #section2-grid{
-    background-color: #444444;
     grid-template-columns: 1fr !important;
     gap: 40px !important;
   }
@@ -184,12 +192,9 @@ footer ol {
 @media screen and (min-width: 1186px) and (max-width: 1700px) {
   #section2 .rect2{
     height: 1270px !important;
-    /* display: none; */
   }
   @media screen and (min-width: 1391px) and (max-width: 1700px) {
     #section2{
-      /* margin-top: -20px !important; */
-     /* background-color: black !important; */
     margin-bottom: 260px !important;
     }
   }
@@ -197,11 +202,9 @@ footer ol {
 /* section3 */
 @media screen and (max-width: 590px) {
   #section3{
-    /* background-color: red !important; */
     flex-direction: column;
   }
   #section3-leftdiv{
-    /* background-color: green !important; */
     width: 100% !important;
     margin-left: 0px !important;
     align-items: center !important;
@@ -230,7 +233,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 470px;
     width: 100% !important;
     text-align: center;
@@ -252,11 +254,9 @@ footer ol {
 }
 @media screen and (min-width: 591px) and (max-width:667px) {
   #section3{
-    /* background-color: black !important; */
     flex-direction: column;
   }
   #section3-leftdiv{
-    /* background-color: green !important; */
     width: 100% !important;
     margin-left: 0px !important;
     align-items: center !important;
@@ -285,7 +285,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 470px;
     width: 100% !important;
     text-align: center;
@@ -310,11 +309,9 @@ footer ol {
 }
 @media screen and (min-width: 668px) and (max-width:727px) {
   #section3{
-    /* background-color: pink !important; */
     flex-direction: column;
   }
   #section3-leftdiv{
-    /* background-color: green !important; */
     width: 100% !important;
     margin-left: 0px !important;
     align-items: center !important;
@@ -343,7 +340,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 470px;
     width: 100% !important;
     text-align: center;
@@ -368,11 +364,9 @@ footer ol {
 }
 @media screen and (min-width: 728px) and (max-width:750px) {
   #section3{
-    /* background-color: red !important; */
     flex-direction: column;
   }
   #section3-leftdiv{
-    /* background-color: green !important; */
     width: 100% !important;
     margin-left: 0px !important;
     align-items: center !important;
@@ -401,7 +395,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 470px;
     width: 100% !important;
     text-align: center;
@@ -426,11 +419,9 @@ footer ol {
 }
 @media screen and (min-width: 751px) and (max-width:848px) {
   #section3{
-    /* background-color: black !important; */
     flex-direction: column;
   }
   #section3-leftdiv{
-    /* background-color: green !important; */
     width: 100% !important;
     margin-left: 0px !important;
     align-items: center !important;
@@ -459,7 +450,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 470px;
     width: 100% !important;
     text-align: center;
@@ -483,11 +473,7 @@ footer ol {
   }
 }
 @media screen and (min-width: 849px) and (max-width:1390px) {
-  #section3{
-    /* background-color: blue !important; */
-  }
   #section3-leftdiv{
-    /* background-color: green !important; */
     margin-left: 0px !important;
     margin-top: 200px;
   }
@@ -514,7 +500,6 @@ footer ol {
   }
   #section3-rightdiv{
     box-sizing: border-box;
-    /* background-color: yellow !important; */
     margin-top: 200px;
     width: 50% !important;
     text-align: center;
@@ -563,32 +548,14 @@ footer ol {
 }
 /* section 4 */
 @media screen and (max-width:700px) {
-  #section4{
+  #section4-images{
+    gap: 3vw !important;
+  }
+  #section4-images-elipse{
+    width: 16vw !important;
+  } #section4{
     margin-top: 60px !important;
     padding: 0px 20px;
-  }
-}
-@media screen and (max-width:700px) {
-  #section5{
-  justify-content: center !important;
-  row-gap: 10px !important;
-  }
-  #section5-hand {
-    margin-top: 24px !important;
-   margin-left: -40px !important;
-  }
-  #section5-charmy {
-    margin: 64px 0px !important;
-  }
-}
-@media screen and (min-width:701px) and (max-width:972px) {
-#section5 > :last-child{
-  margin: 0 auto;
-}
-}
-@media screen and (min-width:1353px) and (max-width:1716px) {
-  #section5 > :last-child{
-    margin: 0 auto;
   }
 }
 /* section 6 */
@@ -603,8 +570,8 @@ footer ol {
 #section6-right-div{
   width: 100% !important;
   padding: 0px 15px !important;
-  background-color: #444444 !important;
   gap: 90px !important;
+  margin-top: 50px !important;
 }
 #section6-card{
   width: 60vw !important;
@@ -630,7 +597,6 @@ footer ol {
   #section6-right-div{
     width: 40vw !important;
     padding: 0px 15px !important;
-    /* background-color: #444444 !important; */
     gap: 90px !important;
   }
   #section6-card{
@@ -643,19 +609,77 @@ footer ol {
 }
 @media screen and (min-width:1100px) and (max-width:1300px) {
 #section6-download{
-  /* background-color: #444444; */
   margin-right: 80px !important;
 }
 }
 @media screen and (min-width:1301px) and (max-width:1590px) {
   #section6-download{
-    /* background-color: red; */
     margin-right: 210px !important;
   }
   }
   @media screen and (min-width:1591px) and (max-width:1810px) {
     #section6-download{
-      /* background-color: green; */
       margin-right: 360px !important;
     }
+    }
+    @media screen and (max-width:700px) {
+    #section7-github{
+     grid-template-columns: 1fr !important;
+     gap: 60px !important;
+     align-items: center !important;
+     
+    }  
+    #section7-github > :nth-child(1){
+     margin-left: 40px !important;
+     }  
+    }
+    @media screen and (min-width:701px) and (max-width:1000px) {
+      #section7-github{
+       grid-template-columns: 1fr 1fr !important;
+       gap: 60px !important;
+       align-items: center !important;
+       margin: 0px 20px;
+      }  
+      #section7-telegram{
+       grid-column: 1/3;
+      }  
+      }
+      @media screen and (min-width:1001px) and (max-width:1370px) {
+        #section7-github{
+         gap: 50px !important;
+         margin: 0px 20px;
+        }    
+        }
+    /* section8 */
+    @media screen and (max-width:790px) {
+    #section8-ready{
+      box-sizing: border-box;
+      padding:0px 52px !important;
+    }  
+    #section8-btn-div{
+      flex-direction: column !important;
+    }
+    #section8-play-btn{
+      margin-left: 0px !important;
+      margin-top: 20px;
+    }
+    footer > ol{
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 85px;
+      justify-content: center;
+      row-gap: 30px;
+    }
+    #footer-hr{
+      margin-top: 130px !important;
+    }
+    #rect27{
+    height: 860px !important;
+    }
+    }
+    @media screen and (min-width:791px) and (max-width:890px) {
+      footer > ol{
+        gap: 30px;
+      }
     }
